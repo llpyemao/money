@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="llp.money.fragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_p2pFragment"
+            app:destination="@id/p2pFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/p2pFragment"
+        android:name="llp.money.fragment.P2pFragment"
+        android:label="fragment_p2p"
+        tools:layout="@layout/fragment_p2p" >
+        <action
+            android:id="@+id/action_p2pFragment_to_p2pDetailFragment2"
+            app:destination="@id/p2pDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/p2pDetailFragment2"
+        android:name="llp.money.fragment.P2pDetailFragment"
+        android:label="fragment_p2p_detail"
+        tools:layout="@layout/fragment_p2p_detail" />
+
+</navigation>
