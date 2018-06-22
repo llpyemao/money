@@ -17,16 +17,16 @@
     <fragment
         android:id="@+id/p2pFragment"
         android:name="llp.money.fragment.P2pFragment"
-        android:label="fragment_p2p"
+        android:label="P2P项目列表"
         tools:layout="@layout/fragment_p2p" >
         <action
-            android:id="@+id/action_p2pFragment_to_p2pDetailFragment2"
-            app:destination="@id/p2pDetailFragment2" />
+            android:id="@+id/action_p2pFragment_to_p2pDetailFragment"
+            app:destination="@id/p2pDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/p2pDetailFragment2"
+        android:id="@+id/p2pDetailFragment"
         android:name="llp.money.fragment.P2pDetailFragment"
-        android:label="fragment_p2p_detail"
+        android:label="P2P项目详情"
         tools:layout="@layout/fragment_p2p_detail" />
 
 </navigation>

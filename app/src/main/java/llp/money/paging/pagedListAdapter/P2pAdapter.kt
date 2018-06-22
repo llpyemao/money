@@ -5,33 +5,41 @@ import android.view.ViewGroup
 import llp.money.entity.P2pVE
 import llp.money.paging.viewHolder.P2pViewHolder
 import android.arch.paging.PagedListAdapter
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import androidx.navigation.Navigation
+import llp.money.R
+
 class P2pAdapter : PagedListAdapter<P2pVE, P2pViewHolder>(diffCallback) {
+
     override fun onBindViewHolder(holder: P2pViewHolder, position: Int) {
         holder.bindTo(getItem(position))
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): P2pViewHolder =
-            P2pViewHolder(parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): P2pViewHolder {
+        var view:View= LayoutInflater.from(parent.context).inflate(R.layout.p2p_all_recycler_item, parent, false)
+        var holder : P2pViewHolder = P2pViewHolder(view)
+
+        holder.p2pView?.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                var position: Int=holder.adapterPosition
+                var p2pVE : P2pVE? = getItem(position)
+
+                Log.i("aa",p2pVE?.p2pId.toString())
+
+                //跳转
+                Navigation.findNavController(view).navigate(R.id.action_p2pFragment_to_p2pDetailFragment)
+            }
+        })
+        return holder
+    }
 
     companion object {
-        /**
-         * This diff callback informs the PagedListAdapter how to compute list differences when new
-         * PagedLists arrive.
-         * <p>
-         * When you add a Cheese with the 'Add' button, the PagedListAdapter uses diffCallback to
-         * detect there's only a single item difference from before, so it only needs to animate and
-         * rebind a single view.
-         *
-         * @see android.support.v7.util.DiffUtil
-         */
         private val diffCallback = object : DiffUtil.ItemCallback<P2pVE>() {
             override fun areItemsTheSame(oldItem: P2pVE, newItem: P2pVE): Boolean =
                     oldItem.p2pId == newItem.p2pId
 
-            /**
-             * Note that in kotlin, == checking on data classes compares all contents, but in Java,
-             * typically you'll implement Object#equals, and use it to compare object contents.
-             */
             override fun areContentsTheSame(oldItem: P2pVE, newItem: P2pVE): Boolean =
                     oldItem == newItem
         }

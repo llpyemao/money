@@ -63,10 +63,6 @@ class StartFragment : Fragment() {
 
 
 
-
-
-
-
                 Navigation.findNavController(view).navigate(R.id.action_startFragment_to_p2pFragment)
             }
             return view
