@@ -16,6 +16,7 @@ import llp.money.viewModel.P2pViewModel
 
 class P2pFragment : Fragment() {
     private val viewModel by lazy(LazyThreadSafetyMode.NONE) {
+        //getActivity()  同一个Activity的多个fragment之间共享ViewModel
         ViewModelProviders.of(getActivity()!!).get(P2pViewModel::class.java)
     }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

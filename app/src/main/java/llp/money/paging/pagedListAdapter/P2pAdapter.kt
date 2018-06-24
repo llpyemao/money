@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import llp.money.entity.P2pVE
 import llp.money.paging.viewHolder.P2pViewHolder
 import android.arch.paging.PagedListAdapter
-import android.util.Log
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import androidx.navigation.Navigation
@@ -24,12 +24,11 @@ class P2pAdapter : PagedListAdapter<P2pVE, P2pViewHolder>(diffCallback) {
         holder.p2pView?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 var position: Int=holder.adapterPosition
-                var p2pVE : P2pVE? = getItem(position)
-
-                Log.i("aa",p2pVE?.p2pId.toString())
-
+                //传递数据
+                var bundle : Bundle = Bundle()
+                bundle.putLong("position", position.toLong())
                 //跳转
-                Navigation.findNavController(view).navigate(R.id.action_p2pFragment_to_p2pDetailFragment)
+                Navigation.findNavController(view).navigate(R.id.action_p2pFragment_to_p2pDetailFragment,bundle)
             }
         })
         return holder

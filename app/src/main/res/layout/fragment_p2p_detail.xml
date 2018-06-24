@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.P2pDetailFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="551dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <TableRow>
+            <TextView  android:text="id：" android:gravity="right" />
+            <TextView  android:id="@+id/p2pId" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="p2p公司名称："  android:gravity="right"/>
+            <TextView  android:id="@+id/companyName" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="资金托管银行："  android:gravity="right"/>
+            <TextView  android:id="@+id/bank" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="产品名称："  android:gravity="right"/>
+            <TextView  android:id="@+id/type" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="本金："  android:gravity="right"/>
+            <TextView  android:id="@+id/principal" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="预期年利率："  android:gravity="right"/>
+            <TextView  android:id="@+id/rate" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="起始日期："  android:gravity="right"/>
+            <TextView  android:id="@+id/dateFrom" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="预期结束日期："  android:gravity="right"/>
+            <TextView  android:id="@+id/dateEnd" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="实际结束日期："  android:gravity="right"/>
+            <TextView  android:id="@+id/dateActual" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="实际利息："  android:gravity="right"/>
+            <TextView  android:id="@+id/interest" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="实际年利率："  android:gravity="right"/>
+            <TextView  android:id="@+id/rateActual" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="状态："  android:gravity="right"/>
+            <TextView  android:id="@+id/isNormal" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="p2p公司网址："  android:gravity="right"/>
+            <TextView  android:id="@+id/url" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
