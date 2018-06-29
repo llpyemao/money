@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <!-- android:id="@+id/startFragment 中的startFragment要与navigation/navigation。xml中的id值一样，则可以在点击bottomNavigation的选项时自动显示fragment  -->
     <item
         android:id="@+id/startFragment"
         android:icon="@drawable/ic_home_black_24dp"
@@ -12,7 +12,7 @@
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/p2pDetailFragment2"
+        android:id="@+id/p2pAddFragment"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 

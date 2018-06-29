@@ -21,6 +21,12 @@ public interface P2pcompanyDao {
     @Query("SELECT * FROM P2pcompany WHERE name=:name")
     P2pcompany findByName(String name);
 
+    @Query("SELECT distinct name FROM P2pcompany")
+    List<String> getNames();
+
+    @Query("SELECT p2pcompanyId FROM P2pcompany where name=:name")
+    Long getIdByName( String name);
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     long insert(P2pcompany p2pcompany);
 

@@ -7,5 +7,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- 验证的提示文字 -->
+    <string name="validation_p2p_type">产品名称不能为空</string>
+    <string name="validation_p2p_principal">本金必须在100-100000之间</string>
+    <string name="validation_p2p_rate">预期年利率必须在0.01-0.2之间</string>
+    <string name="validation_date">日期必须是1980-04-14格式</string>
+    <string name="validation_notNull">不能为空</string>
+
+
 
 </resources>

@@ -8,11 +8,14 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="llp.money.fragment.StartFragment"
-        android:label="fragment_start"
+        android:label="首页"
         tools:layout="@layout/fragment_start" >
         <action
             android:id="@+id/action_startFragment_to_p2pFragment"
             app:destination="@id/p2pFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_p2pAddFragment"
+            app:destination="@id/p2pAddFragment" />
     </fragment>
     <fragment
         android:id="@+id/p2pFragment"
@@ -28,5 +31,9 @@
         android:name="llp.money.fragment.P2pDetailFragment"
         android:label="P2P项目详情"
         tools:layout="@layout/fragment_p2p_detail" />
+    <fragment
+        android:id="@+id/p2pAddFragment"
+        android:name="llp.money.fragment.P2pAddFragment"
+        android:label="购买P2P项目" />
 
 </navigation>

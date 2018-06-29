@@ -5,7 +5,10 @@ import java.util.*
 
 
 
-fun getDateTime( date: Date ) : String{
+fun getDateTime( date: Date? ) : String?{
+    if(date==null)
+        return null
+
     var sb: StringBuilder = StringBuilder();
     sb.append("yyyy年MM月dd日 HH:mm:SS")
 

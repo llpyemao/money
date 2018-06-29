@@ -1,5 +1,6 @@
 package llp.money
 
+import android.content.res.Configuration
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         return Navigation.findNavController(this, R.id.my_nav_host_fragment).navigateUp()
     }
 
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        //你的代码
+        super.onConfigurationChanged(newConfig)
+    }
 
 }
 

@@ -41,7 +41,7 @@ class P2pDetailFragment : Fragment() {
         textView?.text= p2pVE?.companyName
 
         textView =view.findViewById(R.id.url)
-        textView?.text= p2pVE?.url
+        textView?.text= p2pVE?.url?: "未知"
 
         textView =view.findViewById(R.id.bank)
         textView?.text=p2pVE?.bank
@@ -56,7 +56,7 @@ class P2pDetailFragment : Fragment() {
         textView?.text=p2pVE?.rate?.toString()
 
         textView =view.findViewById(R.id.rateActual)
-        textView?.text=p2pVE?.rateActual?.toString()
+        textView?.text=p2pVE?.rateActual?.toString()?: "未知"
 
         textView =view.findViewById(R.id.dateFrom)
         textView?.text=getDateTime(p2pVE!!.dateFrom)
@@ -65,10 +65,13 @@ class P2pDetailFragment : Fragment() {
         textView?.text=getDateTime(p2pVE?.dateEnd)
 
         textView =view.findViewById(R.id.dateActual)
-        textView?.text=getDateTime(p2pVE?.dateActual)
+        textView?.text=getDateTime(p2pVE?.dateActual)?: "未知"
+
+        textView =view.findViewById(R.id.interest)
+        textView?.text=p2pVE?.interest?.toString()?: "未知"
 
         textView =view.findViewById(R.id.isNormal)
-        textView?.text=p2pVE?.isNormal?.toString()
+        textView?.text=p2pVE?.isNormal?.toString()?: "未知"
 
         return view
     }
