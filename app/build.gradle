@@ -53,4 +53,6 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
     //验证
     implementation "com.mobsandgeeks:android-saripaar:2.0.3"
+    //FlexboxLayout自适应换行
+    implementation 'com.google.android:flexbox:1.0.0'
 }

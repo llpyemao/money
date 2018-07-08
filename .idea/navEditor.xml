@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="277" />
-                            <option name="y" value="-276" />
+                            <option name="x" value="423" />
+                            <option name="y" value="-320" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -25,8 +25,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="518" />
-                            <option name="y" value="12" />
+                            <option name="x" value="570" />
+                            <option name="y" value="-1" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -37,8 +37,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="265" />
-                            <option name="y" value="12" />
+                            <option name="x" value="346" />
+                            <option name="y" value="45" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -53,13 +53,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="startFragment">
+                  <entry key="p2pOperateFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="12" />
                             <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="startFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-46" />
+                            <option name="y" value="31" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -70,6 +82,11 @@
                               </value>
                             </entry>
                             <entry key="action_startFragment_to_p2pFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_startFragment_to_p2pOperateFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

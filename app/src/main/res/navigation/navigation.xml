@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_startFragment_to_p2pAddFragment"
             app:destination="@id/p2pAddFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_p2pOperateFragment"
+            app:destination="@id/p2pOperateFragment" />
     </fragment>
     <fragment
         android:id="@+id/p2pFragment"
@@ -35,5 +38,9 @@
         android:id="@+id/p2pAddFragment"
         android:name="llp.money.fragment.P2pAddFragment"
         android:label="购买P2P项目" />
+    <fragment
+        android:id="@+id/p2pOperateFragment"
+        android:name="llp.money.fragment.P2pOperateFragment"
+        android:label="P2pOperateFragment" />
 
 </navigation>

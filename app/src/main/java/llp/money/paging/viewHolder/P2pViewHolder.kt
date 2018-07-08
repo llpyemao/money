@@ -11,7 +11,6 @@ class P2pViewHolder(parent : View) : RecyclerView.ViewHolder(parent) {
     var p2pVE : P2pVE? = null
     var p2pView : View? = null
 
-
     val bankView = itemView.findViewById<TextView>(R.id.p2p_bank)
     val typeView = itemView.findViewById<TextView>(R.id.p2p_type)
     /**
