@@ -26,6 +26,7 @@ class P2pOperateAdapter : RecyclerView.Adapter<ImageTextViewHolder>(){
                 ImageTextBean(R.drawable.ic_notifications_black_24dp,"操作") ,
                 ImageTextBean(R.drawable.ic_notifications_black_24dp,"操作") ,
                 ImageTextBean(R.drawable.ic_notifications_black_24dp,"操作") ,
+                ImageTextBean(R.drawable.ic_notifications_black_24dp,"操作") ,
                 ImageTextBean(R.drawable.ic_notifications_black_24dp,"操作")
         )
     }

@@ -6,4 +6,7 @@
     <color name="colorBackground">#4EFEB3</color>
     <color name="color11">#AAAAAA</color>
     <color name="color22">#DDDDDD</color>
+    <color name="color33">#0000FF</color>
+    <color name="color44">#EE82EE</color>
+    <color name="color55">#FFC0CB</color>
 </resources>

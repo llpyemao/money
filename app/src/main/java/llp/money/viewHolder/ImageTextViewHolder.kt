@@ -14,6 +14,7 @@ class ImageTextViewHolder(itemView: View)   : RecyclerView.ViewHolder(itemView) 
     var  textView : TextView=itemView.findViewById(R.id.textView)
 
     fun bindTo(imageTextBean: ImageTextBean) {
+        //设置图片
         imageView.setImageResource(imageTextBean.imageId)
         textView.text=imageTextBean.text
     }

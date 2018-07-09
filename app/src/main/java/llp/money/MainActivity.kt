@@ -11,6 +11,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.Navigation
+import llp.money.tools.BottomNavigationViewHelper
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
 
         val bottomNavigation : BottomNavigationView  = findViewById<View>(R.id.bottom_navigation) as BottomNavigationView
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigation)//去除自带的动画效果（该效果会隐藏文字内容）
+
         NavigationUI.setupActionBarWithNavController(this, navController)
         NavigationUI.setupWithNavController(bottomNavigation,navController)
 
