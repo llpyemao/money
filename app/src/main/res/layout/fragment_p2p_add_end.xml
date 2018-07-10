@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="551dp">
+
+        <TableRow>
+            <TextView  android:text="p2p公司名称："  android:gravity="right"/>
+            <TextView  android:id="@+id/companyName" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="资金托管银行："  android:gravity="right"/>
+            <TextView  android:id="@+id/bank" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="产品名称："  android:gravity="right"/>
+            <TextView  android:id="@+id/type" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="本金："  android:gravity="right"/>
+            <TextView  android:id="@+id/principal" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="预期年利率："  android:gravity="right"/>
+            <TextView  android:id="@+id/rate" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="起始日期："  android:gravity="right"/>
+            <TextView  android:id="@+id/dateFrom" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="预期结束日期："  android:gravity="right"/>
+            <TextView  android:id="@+id/dateEnd" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="实际年利率："  android:gravity="right"/>
+            <TextView  android:id="@+id/rateActual" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="状态："  android:gravity="right"/>
+            <TextView  android:id="@+id/isNormal" />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="p2p公司网址："  android:gravity="right"/>
+            <TextView  android:id="@+id/url" />
+        </TableRow>
+
+        <TableRow>
+            <TextView  android:text="实际结束日期："  android:gravity="right"/>
+            <EditText
+                android:id="@+id/dateActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="选择实际结束日期"
+ />
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="实际利息："  android:gravity="right"/>
+            <EditText
+                android:id="@+id/interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

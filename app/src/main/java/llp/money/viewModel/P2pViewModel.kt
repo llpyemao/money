@@ -40,7 +40,6 @@ class P2pViewModel(app: Application) : AndroidViewModel(app) {
             .build()).build()
 
 
-
     fun insert(text: CharSequence) = ioThread {
         //dao.insert(P2pVE(id = 0, name = text.toString()))
     }

@@ -7,8 +7,10 @@ import android.widget.TextView
 import com.google.android.flexbox.FlexboxLayoutManager
 import llp.money.R
 import llp.money.bean.ImageTextBean
+import llp.money.myview.ImageTextView
 
 class ImageTextViewHolder(itemView: View)   : RecyclerView.ViewHolder(itemView) {
+    var imageTextView: View? = null
 
     var imageView : ImageView=itemView.findViewById(R.id.imageView)
     var  textView : TextView=itemView.findViewById(R.id.textView)
@@ -19,5 +21,8 @@ class ImageTextViewHolder(itemView: View)   : RecyclerView.ViewHolder(itemView) 
         textView.text=imageTextBean.text
     }
 
+    init {
+        imageTextView=itemView
+    }
 
 }
